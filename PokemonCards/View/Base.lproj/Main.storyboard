@@ -48,8 +48,9 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6M1-Pt-e8D"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="o3O-xf-Qlj"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="VPo-Gw-Ccz"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="kkc-37-Xhx"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -69,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="-11"/>
+            <point key="canvasLocation" x="578" y="-12"/>
         </scene>
         <!--Pokemon Show View Controller-->
         <scene sceneID="giB-NG-PNe">
@@ -187,7 +188,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLp-ks-QHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="-10"/>
+            <point key="canvasLocation" x="-225" y="-12"/>
         </scene>
     </scenes>
 </document>
