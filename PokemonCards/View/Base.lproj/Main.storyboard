@@ -43,15 +43,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="T25-51-v0W" kind="show" id="clX-cV-dKO"/>
+                                            <segue destination="T25-51-v0W" kind="show" identifier="toPokemonShow" id="clX-cV-dKO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="o3O-xf-Qlj"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VPo-Gw-Ccz"/>
-                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="kkc-37-Xhx"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

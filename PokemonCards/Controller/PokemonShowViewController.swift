@@ -9,7 +9,7 @@
 import UIKit
 
 class PokemonShowViewController: UIViewController {
-
+    
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var pokeyName: UILabel!
     @IBOutlet weak var pokeyHp: UILabel!
@@ -20,7 +20,7 @@ class PokemonShowViewController: UIViewController {
     var pokemon: Pokemon?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,18 +28,18 @@ class PokemonShowViewController: UIViewController {
         if let pokemon = pokemon {
             ImageController.getImage(for: pokemon.imageUrl ?? "", completion: { (image) in
                 self.ImageView.image = image
-            // or NetworkController.performRequest(for: <#T##URL#>, httpMethod: <#T##NetworkController.HTTPMethod#>, urlParameters: [String : String]?, body: <#T##Data?#>, completion: <#T##((Data?, Error?) -> Void)?##((Data?, Error?) -> Void)?##(Data?, Error?) -> Void#>)
                 self.pokeyName.text = pokemon.name
                 self.pokeyHp.text = pokemon.hp
                 self.pokeyNumber.text = pokemon.number
                 self.pokeySeries.text = pokemon.series
                 self.pokeySet.text = pokemon.pokemonSet
             })
-            }else{
-                print("pokemon image is nil")
-            }
+        }else{
+            print("pokemon image is nil")
         }
     }
+    
+}
 
 
 

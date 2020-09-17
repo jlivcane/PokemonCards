@@ -18,6 +18,8 @@ class PokemonViewController: UIViewController {
         super.viewDidLoad()
         title = "Pokemon List"
         tableView.dataSource = self
+        getPokemon()
+    }
     
     func getPokemon(){
         let url = URL(string: "https://api.pokemontcg.io/v1/cards")!
@@ -42,7 +44,7 @@ class PokemonViewController: UIViewController {
                 print("Data is nil")
             } }
     } // end getPokemon
-    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPokemonShow",
